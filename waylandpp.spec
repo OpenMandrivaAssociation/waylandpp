@@ -66,9 +66,6 @@ The %{name}-doc package contains development documentation for %{name}.
 # Drop LaTeX documentation (HTML documentation is already built)
 rm -r $RPM_BUILD_ROOT%{_defaultdocdir}/%{name}-doc/latex/
 
-%check
-%ctest
-
 %files -n %{libname}
 %license LICENSE
 %doc README.md
