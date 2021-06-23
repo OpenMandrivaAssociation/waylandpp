@@ -15,6 +15,7 @@ BuildRequires:  cmake
 BuildRequires:  doxygen
 BuildRequires:  graphviz
 BuildRequires:  egl-devel
+BuildRequires:  pkgconfig(egl)
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-cursor)
 BuildRequires:  pkgconfig(wayland-egl)
