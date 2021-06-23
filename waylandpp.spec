@@ -4,7 +4,7 @@
 
 Name:           waylandpp
 Version:        0.2.8
-Release:        %mkrel 2
+Release:        1
 Summary:        Wayland C++ bindings
 Group:          Development/C++
 License:        BSD and MIT and GPLv3+
@@ -14,7 +14,7 @@ Source0:        https://github.com/NilsBrause/waylandpp/archive/%{version}/wayla
 BuildRequires:  cmake
 BuildRequires:  doxygen
 BuildRequires:  graphviz
-BuildRequires:  mesaegl-devel
+BuildRequires:  egl-devel
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-cursor)
 BuildRequires:  pkgconfig(wayland-egl)
@@ -57,10 +57,10 @@ The %{name}-doc package contains development documentation for %{name}.
 
 %build
 %cmake -DCMAKE_INSTALL_DOCDIR=%{_defaultdocdir}/%{name}-doc/
-%cmake_build
+%make_build
 
 %install
-%cmake_install
+%make_install -C build
 
 # Drop LaTeX documentation (HTML documentation is already built)
 rm -r $RPM_BUILD_ROOT%{_defaultdocdir}/%{name}-doc/latex/
