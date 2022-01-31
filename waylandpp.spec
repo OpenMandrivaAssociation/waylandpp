@@ -3,7 +3,7 @@
 %define devel %mklibname %name -d
 
 Name:           waylandpp
-Version:        0.2.8
+Version:        0.2.9
 Release:        1
 Summary:        Wayland C++ bindings
 Group:          Development/C++
