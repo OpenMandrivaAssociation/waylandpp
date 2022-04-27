@@ -82,4 +82,4 @@ rm -r $RPM_BUILD_ROOT%{_defaultdocdir}/%{name}-doc/latex/
 %files doc
 %doc README.md
 %license LICENSE
-%{_defaultdocdir}/%{name}-doc/
+#{_defaultdocdir}/%{name}-doc/
