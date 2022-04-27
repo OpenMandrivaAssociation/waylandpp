@@ -67,8 +67,6 @@ The %{name}-doc package contains development documentation for %{name}.
 rm -r $RPM_BUILD_ROOT%{_defaultdocdir}/%{name}-doc/latex/
 
 %files -n %{libname}
-%license LICENSE
-%doc README.md
 %{_libdir}/*.so.%{major}{,.*}
 
 %files -n %{devel}
