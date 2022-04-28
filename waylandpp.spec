@@ -83,3 +83,4 @@ rm -r $RPM_BUILD_ROOT%{_defaultdocdir}/%{name}-doc/latex/
 %doc README.md
 %license LICENSE
 #{_defaultdocdir}/%{name}-doc/
+%doc %{_datadir}/doc/waylandpp-doc/html/
