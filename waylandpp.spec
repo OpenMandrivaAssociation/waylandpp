@@ -4,7 +4,7 @@
 
 Name:           waylandpp
 Version:        1.0.0
-Release:        1
+Release:        2
 Summary:        Wayland C++ bindings
 Group:          Development/C++
 License:        BSD and MIT and GPLv3+
