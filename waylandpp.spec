@@ -9,7 +9,8 @@ Summary:        Wayland C++ bindings
 Group:          Development/C++
 License:        BSD and MIT and GPLv3+
 URL:            https://github.com/NilsBrause/waylandpp/
-Source0:        https://github.com/NilsBrause/waylandpp/archive/%{version}/waylandpp-%{version}.tar.gz 
+Source0:        https://github.com/NilsBrause/waylandpp/archive/%{version}/waylandpp-%{version}.tar.gz
+Patch0:         waylandpp-1.0.0-gcc13.patch
 
 BuildRequires:  cmake
 BuildRequires:  doxygen
@@ -54,7 +55,7 @@ BuildArch:      noarch
 The %{name}-doc package contains development documentation for %{name}.
 
 %prep
-%autosetup
+%autosetup -p1
 
 %build
 %cmake -DCMAKE_INSTALL_DOCDIR=%{_defaultdocdir}/%{name}-doc/
