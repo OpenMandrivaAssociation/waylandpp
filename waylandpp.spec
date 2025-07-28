@@ -3,8 +3,8 @@
 %define devel %mklibname %name -d
 
 Name:           waylandpp
-Version:        1.0.0
-Release:        2
+Version:        1.0.1
+Release:        1
 Summary:        Wayland C++ bindings
 Group:          Development/C++
 License:        BSD and MIT and GPLv3+
